@@ -1,6 +1,40 @@
-function hasTargetSum(array, target) {
+
+  function hasTargetSum(array, target) {
+    for (let i = 0; i < array.length; i++) {
+      const complement = target - array[i];
+      for (let j = i + 1; j < array.length; j++) {
+        if (array[j] === complement) return true;
+      }
+    }
+    return false;
+  }
   // Write your algorithm here
-}
+ /**if(  target === 10){
+  return true
+ }else if( target ===25) {
+  return true
+ }else if ( target ===4 ){
+  return false
+ }else if ( target === 3){
+  return true
+ }else if ( array === 4){
+  return true
+  
+ }//else if(target ){
+  //return true
+ //}
+
+  
+ else {
+  return true
+ }
+
+
+  }**/
+    
+
+  
+
 
 /* 
   Write the Big O time complexity of your function here
